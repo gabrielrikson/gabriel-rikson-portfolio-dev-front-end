@@ -104,7 +104,13 @@ section.banner-main .msg{
 /* aqui termina o banner */
 
 section.sobre{
+    display: flex;
     width: 100%;
     min-height: 800px;
     background-color: var(--orange-default);
 }
+section.sobre > .container{
+    display: flex;
+    justify-content: space-between;
+}
+
