@@ -21,6 +21,33 @@
 *
 */
 
+.rectangle{
+    width: 100px;
+    height: 6px;
+    background-color: var(--orange-darker);
+}
+.w30{
+    width: 30%;
+}
+.w40{
+    width: 40%;
+}
+.w50{
+    width: 50%;
+}
+.w60{
+    width: 60%;
+}
+.w70{
+    width: 70%;
+}
+
+.title-section{
+    width: 250px;
+    margin: 0 auto;
+}
+
+
 html,body{
     height: 100%;
 }
@@ -101,16 +128,95 @@ section.banner-main .msg{
     color: var(--orange-default);
 }
 
-/* aqui termina o banner */
+/**** aqui termina o banner ****/
 
 section.sobre{
     display: flex;
     width: 100%;
-    min-height: 800px;
+    min-height: 400px;
     background-color: var(--orange-default);
+    color: #fff;
 }
 section.sobre > .container{
     display: flex;
     justify-content: space-between;
 }
 
+section.sobre .sobre-left{
+    display: flex;
+    justify-content: center;
+}
+
+.picture{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-image: url('../images/gabriel2.png');
+    background-position: center;
+    background-size: cover;
+    margin-top: 75px;
+}
+
+section.sobre{
+    padding: 60px 0;
+}
+
+.sobre-right h3{
+    font-family: 'Roboto';
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+.sobre-right p{
+    text-align: justify;
+    padding: 10px 0;
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.sobre-right .icons{
+    color: white;
+    font-size: 72px;
+}
+
+.icons p{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/**** Aqui termina a section sobre ****/
+
+section.projects{
+    padding: 60px 0;
+}
+section.projects .rectangle{
+    width: 92px;
+}
+
+section.projects h3{
+    color: var(--orange-default);
+    font-family: 'Roboto';
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+section.projects .gallery{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 60px 0;
+}
+
+.gallery .box{
+    width: 25%;
+    cursor: pointer;
+}
+
+.gallery .box img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 3px 6px 1px rgb(47, 47, 47);
+    border-radius: 2px;
+}
