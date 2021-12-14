@@ -39,7 +39,7 @@
 
 .title-section{
     margin: 0 auto;
-    text-align-last: center;
+    text-align: center;
     color: var(--orange-default);
     font-family: 'Roboto';
     font-size: 38px;
@@ -98,6 +98,12 @@ nav.menu-desktop a:hover{
     transition: .3s;
 }
 
+@media screen and (max-width:768px){
+    nav.menu-desktop{
+        display: none;
+    }
+}
+
 /* aqui termina o header */
 
 section.banner-main{
@@ -127,6 +133,15 @@ section.banner-main .msg{
     font-size: 40px;
     font-weight: 600;
     color: var(--orange-default);
+}
+
+@media screen and (max-width:768px){
+    .msg h2{
+        font-size: 42px;
+    }
+    .msg p{
+        font-size: 32px;
+    }
 }
 
 /**** aqui termina o banner ****/
@@ -185,14 +200,38 @@ section.sobre{
     margin-top: 20px;
 }
 
+@media screen and (max-width:768px){
+    section.sobre > .container{
+        flex-direction: column;
+    }
+    .picture{
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .sobre-left{
+        width: 100%;
+    }
+    .sobre-right{
+        width: 100%;
+        padding: 0 4%;
+    }
+    .icons{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .icons p{
+        margin: 0 10px;
+    }
+}
+
 /**** Aqui termina a section sobre ****/
 
 section.projects{
     padding: 80px 0;
 }
-section.projects .rectangle{
-    width: 92px;
-}
+
 
 section.projects h3{
     font-family: 'Roboto';
@@ -210,7 +249,7 @@ section.projects .gallery{
 }
 
 .gallery .box{
-    width: 25%;
+    width: 30%;
     cursor: pointer;
 }
 
@@ -221,6 +260,16 @@ section.projects .gallery{
     border-radius: 2px;
 }
 
+@media screen and (max-width:768px){
+    section.projects .gallery{
+        flex-direction: column;
+        margin: 0;
+    }
+    .gallery .box{
+        width: 100%;
+        padding: 20px;
+    }
+}
 /* aqui termina a section de projetos*/
 
 section.contact{
@@ -247,6 +296,23 @@ section.contact .media-socials{
 .media-socials img{
     height: 64px;
     padding: 0 6px
+}
+
+@media screen and (max-width:768px){
+    section.contact{
+        padding: 0;
+        padding-bottom: 40px;
+    }
+    section.contact .title-section h3{
+        font-size: 34px;
+    }
+    section.contact p.chamada{
+        width: 100%;
+        font-size: 20px;
+    }
+    .media-socials img{
+        height: 50px;
+    }
 }
 
 /* aqui termina a section contato */
