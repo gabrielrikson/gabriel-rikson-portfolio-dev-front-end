@@ -21,11 +21,6 @@
 *
 */
 
-.rectangle{
-    width: 100px;
-    height: 6px;
-    background-color: var(--orange-darker);
-}
 .w30{
     width: 30%;
 }
@@ -43,10 +38,16 @@
 }
 
 .title-section{
-    width: 250px;
     margin: 0 auto;
+    text-align-last: center;
+    color: var(--orange-default);
+    font-family: 'Roboto';
+    font-size: 38px;
 }
 
+span{
+    border-top: 5px solid #c33003;
+}
 
 html,body{
     height: 100%;
@@ -187,14 +188,13 @@ section.sobre{
 /**** Aqui termina a section sobre ****/
 
 section.projects{
-    padding: 60px 0;
+    padding: 80px 0;
 }
 section.projects .rectangle{
     width: 92px;
 }
 
 section.projects h3{
-    color: var(--orange-default);
     font-family: 'Roboto';
     font-size: 38px;
     margin-bottom: 10px;
@@ -219,4 +219,32 @@ section.projects .gallery{
     height: 100%;
     box-shadow: 3px 3px 6px 1px rgb(47, 47, 47);
     border-radius: 2px;
+}
+
+/* aqui termina a section de projetos*/
+
+section.contact{
+    width: 100%;
+    padding: 80px 0;
+}
+
+section.contact .title-section p{
+    font-size: 24px;
+}
+
+section.contact p.chamada{
+    font-size: 24px;
+    font-family: 'Roboto Condensed';
+    text-align: center;
+    width: 70%;
+    margin: 40px auto;
+    color: var(--orange-default);
+}
+
+section.contact .media-socials{
+    text-align: center;
+}
+.media-socials img{
+    height: 64px;
+    padding: 0 6px
 }
