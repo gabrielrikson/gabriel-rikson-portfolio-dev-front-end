@@ -346,3 +346,18 @@ footer p{
     }
 }
 
+/* Abaixo estará o estilo da scrollbar*/
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--orange-default);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--orange-darker);
+    cursor: pointer;
+}
