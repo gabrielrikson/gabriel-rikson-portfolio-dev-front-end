@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Rikson | Desenvolvedor Front-End</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <script src="https://kit.fontawesome.com/ed46878bad.js" crossorigin="anonymous"></script>
 <!--link font-awesome-->
 </head>
@@ -19,30 +20,29 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Curriculo</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav><!--menu-desktop-->
         </div><!--container-->
     </header>
 
-    <section class="banner-main">
+    <section id="home" class="banner-main">
         <div class="msg">
             <h2>Gabriel Rikson</h2>
             <p>Desenvolvedor Web Front-End</p>
         </div>
     </section><!--banner-main-->
 
-    <section class="sobre">
+    <section id="sobre" class="sobre">
         <div class="container">
-            <div class="sobre-left w40">
+            <div class="sobre-left w40" data-anime="left">
                 <div class="picture"></div><!--picture-->
             </div><!--sobre-right-->
 
-            <div class="sobre-right w60">
+            <div class="sobre-right w60" data-anime="right">
 
                     <div class="rectangle"></div>
                     <h3><span>Sobre</span> mim</h3>
@@ -60,13 +60,13 @@
         </div><!--container-->
     </section><!--sobre-->
 
-    <section class="projects">
+    <section id="projetos" class="projects">
         <div class="container">
-            <div class="title-section">
+            <div class="title-section" data-anime="top">
                 <h3><span>Meus</span> Projetos</h3>
             </div><!--title-section-->
 
-            <div class="gallery">
+            <div class="gallery" data-anime="top">
                 
                 <div class="box">
                     <img src="./images/thumb-projetos/lpage-vidraçaria.png" alt="">
@@ -85,15 +85,15 @@
         </div><!--container-->
     </section><!--my-projects-->
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="container">
-            <div class="title-section">
+            <div class="title-section"data-anime="top">
                 <h3><span>Entre</span> em contato comigo</h3>
                 <p>Redes Sociais e Repositório</p>
             </div><!--title-section-->
 
-            <p class="chamada">Envie-me um email, ou entre em contato através do LinkedIn, para transformarmos sua ideia em um projeto real bonito e moderno.</p>
-            <div class="media-socials">
+            <p class="chamada" data-anime="top">Envie-me um email, ou entre em contato através do LinkedIn, para transformarmos sua ideia em um projeto real bonito e moderno.</p>
+            <div class="media-socials" data-anime="top">
                 <a href=""><img src="./images/icons/linkedin.png" alt=""></a>
                 <a href="https://www.google.com.br/"><img src="/images/icons/email.png" alt=""></a>
                 <a href=""><img src="./images/icons/github.png" alt=""></i></a>
@@ -107,6 +107,7 @@
         </div><!--container-->
     </footer>
 
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
