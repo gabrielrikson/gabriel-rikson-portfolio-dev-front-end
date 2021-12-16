@@ -107,6 +107,7 @@ nav.menu-mobile i.icon-menu{
     font-size: 30px;
     color: white;
     cursor: pointer;
+    padding: 5px 10px;
 }
 nav.menu-mobile ul{
     width: 100%;
