@@ -319,7 +319,7 @@ section.projects .gallery{
     section.projects .gallery{
         flex-direction: column;
         margin: 0;
-        padding: 0 60px;
+        padding: 0 30px;
     }
     .gallery .box{
         width: 100%;
