@@ -66,9 +66,10 @@ header{
     position: fixed;
     left: 0;
     top: 0;
-    background-color: rgba(20, 20, 20, 0.849);
+    background-color: rgba(46, 46, 46, 0.698);
     padding: 18px 0;
     z-index: 3;
+    transition: .2s;
 }
 
 header > .container{
@@ -118,8 +119,9 @@ nav.menu-mobile ul{
     display: none;
 }
 nav.menu-mobile li{
-    background-color: rgba(20, 20, 20, 0.849);
-    border-bottom: 1px solid black;
+    padding: 6px 10px;
+    background-color: rgb(37, 34, 34);
+    border-top: 1px solid rgb(51, 51, 51);
 }
 nav.menu-mobile a{
     text-decoration: none;
@@ -182,8 +184,9 @@ section.banner-main .msg{
 
 section.sobre{
     display: flex;
-    background-color: var(--orange-default);
+    background-image: linear-gradient(to right,#f8815d,#ce471e);
     color: #fff;
+    padding: 120px 0;
 }
 section.sobre > .container{
     display: flex;
@@ -202,10 +205,6 @@ section.sobre .sobre-left{
     background-position: center;
     background-size: cover;
     margin-top: 75px;
-}
-
-section.sobre{
-    padding: 120px 0;
 }
 
 .sobre-right h3{
