@@ -1,3 +1,14 @@
+$(function(){
+    const btnMenu       = $('.menu-mobile');
+    const interfaceMenu = $('.menu-mobile ul');
+
+    btnMenu.click(function(){
+        interfaceMenu.slideToggle();
+    });
+})
+
+//aqui inicia o script de animação de slide do conteudo
+
 const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
 
@@ -20,3 +31,6 @@ if(target.length) {
         console.log('usuns')
     })
 }
+
+// aqui termina o script de animação de slide do conteudo
+
