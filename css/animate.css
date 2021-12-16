@@ -8,7 +8,7 @@
 }
 
 [data-anime="right"]{
-    transform: translateX(10px);
+    transform: translateX(8px);
 }
 
 [data-anime="top"]{
