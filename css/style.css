@@ -359,7 +359,6 @@ section.contact .media-socials{
 
 @media screen and (max-width:768px){
     section.contact{
-        padding: 0;
         padding-bottom: 40px;
     }
     section.contact .title-section h3{
